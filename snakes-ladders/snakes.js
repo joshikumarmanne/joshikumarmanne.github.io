@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 	$('.ball').click(function(){
 		$('.ball').effect( "bounce", {times:3}, 900);	
-		var k = Math.floor(Math.random()*6 + 1);
+		var k = 2;// Math.floor(Math.random()*6 + 1);
 		$('.ball').text(k);
 
 		if(clicks==1){
@@ -30,45 +30,49 @@ $(document).ready(function(){
 					a=ladders[key]
 				}
 			}
-				if(a==100){
-					$('#' + a).append($('.image1'));
-					alert("Player1 wins the game");
-				}
-				else if(a>100){
-					a=a-k;
-					alert("unable to move");
-				}
-				else{	
-					
-					$('#' + a).append($('.image1'));	
-				}
-				
-				
+			if(a==100){
+				$('#' + a).append($('.image1'));
+				alert("Player1 wins the game");
+			}
+			else if(a>100){
+				a=a-k;
+				alert("unable to move");
+			}
+			else{	
+
+				$('#' + a).append($('.image1'));	
 			}
 
-			else if(clicks==2)
-			{
-				b=b+k;
-				for(var key  in ladders) {
-					if(key==b){
-						b=ladders[key]
-					}}
-					if(b==100){
-						$('#' + b).append($('.image2'));
-						alert("Player2 wins the game");
-					}
-					else if(b>100){
-						b=b-k;
-						alert("unable to move");
-					}
-					else{	
-						
-						$('#' + b).append($('.image2'));	
-					}} 
-					if([4,6].indexOf(k) < 0){
-						clicks=(clicks < users) ? (clicks+1):1
-					}
-					$('.player').text("Now Player"+clicks);
-					
-				});
+
+		}
+
+		else if(clicks==2)
+		{
+			b=b+k;
+			if(ladders[b]) {
+			 b = ladders[b];
+			}
+			/*for(var key  in ladders) {
+				if(key==b){
+					b=ladders[key]
+				}
+			}*/
+			if(b==100){
+				$('#' + b).append($('.image2'));
+				alert("Player2 wins the game");
+			}
+			else if(b>100){
+				b=b-k;
+				alert("unable to move");
+			}
+			else{	
+
+				$('#' + b).append($('.image2'));	
+			}} 
+			if([4,6].indexOf(k) < 0){
+				clicks=(clicks < users) ? (clicks+1):1
+			}
+			$('.player').text("Now Player"+clicks);
+
+		});
 });
