@@ -26,6 +26,7 @@ h3 {
 #one  {
 	margin-left:auto; 
     margin-right:auto;
+    line-height: 40px;
 
 border: 1px solid black;
 
@@ -36,16 +37,20 @@ border: 1px solid black;
     margin-right:auto;
 
 }
-.three {
+.bold {
 	border: 1px solid black;
 }
-.four {
+.table {
     padding: 10px;
     border: 1px solid black;
 }
-.five {
-    padding: 10px;
+.profile {
+    padding-left: 10px;
+padding-right: 200px;
+font-weight: bold;
+line-height: 200%;
     font-weight:bold;
+
     
 }
 
@@ -57,8 +62,14 @@ border: 1px solid black;
 
 
 .tab {
-	margin-left: 50px;
+	text-indent:50px;
 }
 hr {
 	border:3px double black;
+}
+p {
+	line-height: 190%;
+}
+li {
+	line-height: 190%;
 }
