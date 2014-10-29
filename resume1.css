@@ -17,7 +17,7 @@ h1 {
 #right {
 	float: right;
 	width: 50%;
-text-align: right;
+	text-align: right;
 }
 h3 {
 	font-family:Garamond;
@@ -27,15 +27,11 @@ h3 {
 	margin-left:auto; 
     margin-right:auto;
     line-height: 40px;
-
-border: 1px solid black;
-
-
+	border: 1px solid black;
 }
 #two {
 	margin-left:auto; 
     margin-right:auto;
-
 }
 .bold {
 	border: 1px solid black;
@@ -46,21 +42,15 @@ border: 1px solid black;
 }
 .profile {
     padding-left: 10px;
-padding-right: 200px;
-font-weight: bold;
-line-height: 200%;
+	padding-right: 200px;
+	font-weight: bold;
+	line-height: 200%;
     font-weight:bold;
-
-    
 }
-
 #reg {
 	float:right;
 	margin-right: 100px;
-
 }
-
-
 .tab {
 	text-indent:50px;
 }
