@@ -8,31 +8,28 @@ $(document).ready(function(){
 	for(var i = 0; i<10; i++) {
 		$('table').append('<tr></tr>');
 		for(var j = 0; j <10; j++) {
+			var column1 = ((q*10)-(j));
+			var column2 = (((q-1)*10)+(j+1));
 			if(i%2==0){
-				$('table').find('tr').eq(i).append('<td id='+((q*10)-(j))+'>'+((q*10)-(j))+'</td>');	
+				$('table').find('tr').eq(i).append('<td id='+column1+'>'+column1+'</td>');	
 			}
 			else{
-				$('table').find('tr').eq(i).append('<td id='+(((q-1)*10)+(j+1))+'>'+(((q-1)*10)+(j+1))+'</td>');
+				$('table').find('tr').eq(i).append('<td id='+column2+'>'+column2+'</td>');
 			}
 		}
 		q--;
 	}
-
 	$('.ball').click(function(){
 		$('.ball').effect( "bounce", {times:3}, 900);	
 		var k =  Math.floor(Math.random()*6 + 1);
-		
 		$('.ball').text(k);
-
 		if(clicks==1){
 			a=process(a,k,clicks);
 		}
 		else if(clicks==2)
 		{
-			
 			b=process(b,k,clicks);
 		}
-
 		if([4,6].indexOf(k) < 0){
 			clicks=(clicks < users) ? (clicks+1):1
 		}
@@ -41,26 +38,23 @@ $(document).ready(function(){
 
 	});
 });
-var process=function(c,h,joshi)
+var process=function(c,h,move)
 {
 	c=c+h;
 	if(ladders[c]) {
 		c = ladders[c];
 	}
-
 	if(c==100){
-		$('#' + c).append($('.image'+joshi));
-		alert("Game wins By : player"+joshi );
+		$('#' + c).append($('.image'+move));
+		alert("Game wins By : player"+move );
 	}
 	else if(c>100){
 		c=c-h;
 		alert("unable to move");
 	}
 	else{	
-
-		$('#' + c).append($('.image'+joshi));	
+		$('#' + c).append($('.image'+move));	
 	}
 	return c;
-
 }
 

@@ -5,7 +5,6 @@ table {
 	padding-left: 234px;
 	display: inline-table;
 }
-
 .ball {
 	margin-top: 213px;
 	margin-right: 69px;
@@ -13,14 +12,11 @@ table {
 	float: right;
 	font-size: 100px;
 	text-align: center;
-
-	
 	
 	height: 100px;
 	width: 100px;
 	background:green; 
 	border: 2px double red;
-	
 }
 
 tr {
@@ -31,27 +27,22 @@ td {
 	width:70px;
 	height:55px;
 }
-/
 table tr:nth-child(even) td:nth-child(even) {
 background-color:#D14F4F;
 }
 table tr:nth-child(even) td:nth-child(odd) {
 background-color:#C77727;
 }
-
 table tr:nth-child(odd) td:nth-child(even) {
 background-color: #10E9E6;}
 table tr:nth-child(odd) td:nth-child(odd) {
 background-color: #7B5CAF;}
-
 #one {
-
 	position:absolute;
 	height:180px;
 	width:200px;
 	padding-left:770px;
 	padding-top:394px;
-
 }
 #two {
 	position:absolute;
@@ -59,7 +50,6 @@ background-color: #7B5CAF;}
 	width:250px;
 	padding-left:504px;
 	padding-top:277px
-
 }
 #three {
 	position:absolute;
@@ -67,7 +57,6 @@ background-color: #7B5CAF;}
 	width:80px;
 	padding-left:472px;
 	padding-top:10px
-
 }
 #four {
 	position:absolute;
@@ -82,7 +71,6 @@ background-color: #7B5CAF;}
     padding-left: 336px;
     width: 198px;
     height: 205px;
-
 }
 #six {
 	position:absolute;
@@ -90,19 +78,14 @@ background-color: #7B5CAF;}
     height: 202px;
     padding-top: 0px;
     padding-left: 497px;
-    
-
 }
-
-.jo {
+.players {
 	float: left;
 	position :relative;
 	width: 20px;
 	margin-top: 566px;
 	left: 173px;
 	right:127px;
-	
-
 }
 .image1{
 	width:38px;
@@ -122,7 +105,6 @@ background-color: #7B5CAF;}
     width:50%;
 	float: right;
 	font-size: 20px;
-
 }
 
 
